@@ -1,0 +1,555 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+
+	<!-- GOOGLE FONT -->
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
+
+	<!-- Mon CSS -->
+	<link rel="stylesheet" href="css/style.css">
+
+	<!-- LIEN POUR FONT AWESOME -->
+	<script src="https://kit.fontawesome.com/83f4286022.js" crossorigin="anonymous"></script>
+	<script language="JavaScript" src="/js/calcule.js"></script>
+	<!-- Mon Script -->
+
+	<!-- Titre de ma page -->
+	<title>CV MILANTONI Guillaume</title>
+</head>
+
+<body>
+	<!--
+	*****************************
+	|			HEADER			|
+ 	*****************************
+-->
+	<header class="container-fluid">
+		<div class="row hauteurMatrix" id="flexMatix">
+			<canvas class="col-sm-12" id="c">
+			</canvas>
+		</div>
+		<div class="row" id="rowMatrix">
+			<h1 class="col-sm-6 text-center">
+				<strong>MILANTONI - Guillaume</strong>
+			</h1>
+			<nav class="col-sm-6 text-center">
+				<a href="/">
+					<strong>ACCEUIL</strong>
+				</a>
+				<a href="#WorkExperience">
+					<strong>EXPERIENCES PROFESSIONNELLES</strong>
+				</a>
+				<a href="#Education">
+					<strong>FORMATIONS</strong>
+				</a>
+				<a href="#Activities">
+					<strong>CENTRES D'INTERETS</strong>
+				</a>
+			</nav>
+		</div>
+	</header>
+
+	<!--
+	*****************************
+	|			MAIN			|
+ 	*****************************
+ -->
+	<main class="container-fluid">
+		<!-- -- --	Informations	-- -- -->
+		<section class="container-fluid first">
+			<!-- --	Photo -- -->
+			<div class="row" id="photo">
+				<div class="col-sm-12 text-center">
+					<img class="text-center" src="images/moi.jpg" alt="Photo d'identité">
+				</div>
+
+			</div>
+			<div class="row">
+				<!-- -- Présentation -- -->
+				<div class="col-md-6 col-sm-12 presentation">
+					<div class="row">
+						<h2 class="col-sm-12 text-center">
+							<strong>Quelques mots sur moi?</strong>
+						</h2>
+					</div>
+					<div class="row">
+						<p class="col-sm-12 text-left">
+							Après un BAC électrotechnique et un BTS Informatique et Réseau (pour les Industries et les Services Technique), j'ai travailler pendant 9ans dans le dommaine de la sécurité.<br><br>
+
+							Ma passion pour les métiers numériques m' a orienté naturellement vers une formation pour un titre professionnel de développeur web et web mobile. <br>
+
+						</p>
+					</div>
+				</div>
+				<!-- -- Contact-- -->
+				<div class="col-md-6 col-sm-12 text-center contact">
+					<div class="row">
+						<h2 class="col-sm-12 text-center">
+							<strong>Etat Civil</strong>
+						</h2>
+					</div>
+					<div class="row name">
+						<i class="fas fa-male col-md-1 col-sm-12 text-center"></i>
+						<p class="col-md-4 col-sm-12 text-left"><strong>Nom - Prénom: </strong></p>
+						<p class="col-md-7 col-sm-12 text-left">MILANTONI - Guillaume</p>
+					</div>
+					<div class="row adress">
+						<i class="fa fa-home col-md-1 col-sm-12 text-center"></i>
+						<p class="col-md-4 col-sm-12 text-left"><strong>Adresse : </strong></p>
+						<p class="col-md-7 col-sm-12 text-left">32 Rue Jeanne d'Arc - 54111 Mont-Bonvillers</p>
+					</div>
+					<div class="row phone">
+						<i class="fas fa-mobile-alt col-md-1 col-sm-12 text-center"></i>
+						<p class="col-md-4 col-sm-12 text-left"><strong>Téléphone :</strong></p>
+						<p class="col-md-7 col-sm-12 text-left">06 89 02 41 47</p>
+					</div>
+					<div class="row mail">
+						<i class="fas fa-at col-md-1 col-sm-12 text-center"></i>
+						<p class="col-md-4 col-sm-12 text-left"><strong>Mail :</strong></p>
+						<a href="mailto:gmilantoni@gmail.fr" class="col-md-7 col-sm-12 text-left"> milant54111@gmail.com </a>
+					</div>
+					<div class="row info">
+						<i class="fas fa-car col-md-1 col-sm-12 text-center"></i>
+						<p class="col-md-4 col-sm-12 text-left"><strong>Permis :</strong></p>
+						<p class="col-md-7 col-sm-12 text-left">B + véhicule personnel.</p>
+					</div>
+					<div class="row socialNetwork">
+						<a class="col-sm-4" href="https://github.com/milantac" id="logoGit">
+							<i class="fab fa-github overflow-hidden"></i>
+						</a>
+						<a class="col-sm-4" href="https://www.facebook.com/K3babDelMilant" id="logoFb"><i class="fab fa-facebook overflow-hidden"></i></a>
+						<a class="col-sm-4" href="https://www.linkedin.com/in/guillaume-milantoni-b9a44074/" id="logoIn"><i class="fab fa-linkedin overflow-hidden"></i></a>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!--	expériences professionnelles	-->
+		<section class="container-fluid second" id="WorkExperience">
+			<div class="row">
+				<h2 class="col-sm-12 text-center title">
+					<i class="fas fa-briefcase"> Expériences professionnelles
+					</i>
+				</h2>
+			</div>
+			<!--expRow for borders-->
+			<div class="row m-2 expRow">
+				<!--logoWork for center & put the image the same size-->
+				<div class="col-md-2 col-sm-12 logoWork">
+					<img src="images/sgp.png" alt="group sgp">
+				</div>
+				<div class="col-md-10 col-sm-12">
+					<!--logoWork to put a black outline-->
+					<div class="row mt-3 mb-3 mr-2" id="borderExp">
+						<h4 class="col-sm-4 text-center">
+							de 2010<br>à 2019
+						</h4>
+						<h4 class="col-sm-4 text-center">
+							Groupe SGP<br>à 57070 Metz
+						</h4>
+						<h4 class="col-sm-4 text-center">
+							Agent de prenvention et de Sécurité
+						</h4>
+					</div>
+					<div class="row mt-3 mb-3 mr-2 detail" id="borderExp">
+						<p class="col-sm-12 text-left">
+							Agent de Prévention de Sécurité sur différents sites, cela m'a appris à respecter les procédures et les règles, à être attentif à mon environnement et aux personnes.
+							<br>
+							Ainsi qu'à rester calme face au danger.
+						</p>
+					</div>
+				</div>
+			</div>
+			<div class="row m-2 expRow">
+				<div class="col-md-2 col-sm-12 logoWork">
+					<img src="images/ARBITRE.jpg">
+				</div>
+				<div class="col-md-10 col-sm-12">
+					<div class="row mt-3 mb-3 mr-2" id="borderExp">
+						<h4 class="col-sm-4 text-center">
+							de 2003<br>à 2010
+						</h4>
+						<h4 class="col-sm-4 text-center">
+							Intervenant dans<br>le monde du Football amateur
+						</h4>
+						<h4 class="col-sm-4 text-center">
+							Arbitre et Educateur en catégorie jeune.
+						</h4>
+					</div>
+					<div class="row mt-3 mb-3 mr-2 detail" id="borderExp">
+						<p class="col-sm-12 m-2 text-left">
+							Arbitre de football dans le district du pays-haut de Meurthe-et-Moselle, cela m'a permis d'apprendre et de faire faire appliquer des règles, de diriger un groupe de personnes, de prendre des décisions.<br>Pour le coté d'éducateur cela m'a appris à enseigner et à faire preuve de pédagogie envers un groupe et faire preuve de patience.
+						</p>
+					</div>
+				</div>
+			</div>
+			<div class="row m-2 expRow">
+				<div class="col-md-2 col-sm-12 logoWork">
+					<h3 class="mt-5">Anirys</h3>
+				</div>
+				<div class="col-md-10 col-sm-12">
+					<div class="row mt-3 mb-3 mr-2" id="borderExp">
+						<h4 class="col-sm-4 text-center">
+							en 2006
+						</h4>
+						<h4 class="col-sm-4 text-center">
+							Anirys<br>à 57380 Faulquemont
+						</h4>
+						<h4 class="col-sm-4 text-center">
+							stage BTS IRIS
+						</h4>
+					</div>
+					<div class="row mt-3 mb-3 mr-2 detail" id="borderExp">
+						<p class="text-left col-sm-12">
+							Chez Anirys j'ai découvert la maintenance et la réparation d'ordinateur pour différents clients. J'ai pu y découvrir des logiciels open-sources comme CCleaner, SpyBot ....
+						</p>
+					</div>
+				</div>
+			</div>
+			<div class="row m-2 expRow">
+				<div class="col-sm-2 logoWork">
+					<img src="images/Faurecia-logo.jpg">
+				</div>
+				<div class="col-sm-10">
+					<div class="row mt-3 mb-3 mr-2" id="borderExp">
+						<h4 class="col-sm-4 text-center">
+							en 2004<br>et 2005
+						</h4>
+						<h4 class="col-sm-4 text-center">
+							Faurecia<br>à 54620 Pierrepont
+						</h4>
+						<h4 class="col-sm-4 text-center">
+							travail d'été en intérim
+						</h4>
+					</div>
+					<div class="row mt-3 mb-3 mr-2 detail" id="borderExp">
+						<p class="col-sm-12 text-left">
+							En tant qu'agent de fabrication, j'ai été amené à travailler sur différents postes.
+							<br>
+							J'ai pu développer mes aptitudes en flexibilité et adaptabilité.
+					</div>
+				</div>
+			</div>
+		</section>
+		<!--	Formations et Diplomes	-->
+		<section class="container-fluid third" id="Education">
+			<div class="row">
+				<h2 class="col-sm-12 text-center title">
+					<i class="fas fa-graduation-cap">Formation/Diplomes</i>
+				</h2>
+			</div>
+			<div class="row m-2" id="borderExp">
+				<h5 class="col-sm-3 text-center">
+					de Septembre 2020<br>à<br>Mai 2021
+				</h5>
+				<h5 class="col-sm-3 text-center">
+					CCI formation de Joeuf
+				</h5>
+				<h5 class="col-sm-2 text-center">
+					Formation suivie :
+				</h5>
+				<h5 class="col-sm-4 text-left">
+					Titre Professionneloppeur web et web mobile
+				</h5>
+			</div>
+			<div class="row m-2" id="borderExp">
+				<h5 class="col-sm-3 text-center">
+					de Septembre 2019<br>à<br>Mars 2020
+				</h5>
+				<h5 class="col-sm-3 text-center">
+					GRETA de longwy
+				</h5>
+				<h5 class="col-sm-2 text-center">
+					Formation suivie :
+				</h5>
+				<h5 class="col-sm-4 text-left">
+					Plateforme Linguistique en anglais Niveau A2
+				</h5>
+			</div>
+			<div class="row m-2" id="borderExp">
+				<h5 class="col-sm-3 text-center">
+					en 2010
+				</h5>
+				<h5 class="col-sm-3 text-center">
+					C.F.S.I de Liverdun<br>
+					(Centre de Formation Sécurité Incendie)
+				</h5>
+				<h5 class="col-sm-2 text-center">
+					diplômes obtenus :
+				</h5>
+				<h5 class="col-sm-4 text-left">
+					CQP APS<br>
+					SSIAP1<br>
+					habilitaion H0B0<br>
+					SST<br>
+				</h5>
+			</div>
+			<div class="row m-2" id="borderExp">
+				<h5 class="col-sm-3 text-center">
+					en 2007<br>et<br>2008
+				</h5>
+				<h5 class="col-sm-3 text-center">
+					Diplôme d'éducateur de Football
+				</h5>
+				<h5 class="col-sm-2 text-center">
+					diplôme obtenu 2007 :<br>
+					diplôme obtenu 2008 :
+				</h5>
+				<h5 class="col-sm-4 text-left">
+					Initiateur 1<br>
+					Initiateur 2
+				</h5>
+			</div>
+			<div class="row m-2" id="borderExp">
+				<h5 class="col-sm-3 text-center">
+					de 2000<br>à<br>2008
+				</h5>
+				<h5 class="col-sm-3 text-center">
+					Lycée Jean-Zay de Jarny
+				</h5>
+				<div class="col-sm-6 text-center">
+					<div class="row">
+						<h5 class="col-sm-4 text-center">
+							diplôme obtenu 2008 :
+						</h5>
+						<h5 class="col-sm-8 text-left">
+							BTS IRIS<br>
+							(Informatique et Réseau pour les Industries et les Services techniques)
+						</h5>
+					</div>
+					<div class="row">
+						<h5 class="col-sm-4 text-center">
+							diplôme obtenu 2004 :
+						</h5>
+						<h5 class="col-sm-8 text-left">
+							BAC STI GE<br>
+							(Sciences et Technique Industrielles éenie Electrotechnique)
+						</h5>
+					</div>
+				</div>
+			</div>
+			<div class="row m-2" id="borderExp">
+				<h5 class="col-sm-3 text-center">
+					en 2003
+				</h5>
+				<h5 class="col-sm-3 text-center">
+					Centre de Premier Secour de Mont-Bonvillers
+				</h5>
+				<h5 class="col-sm-2 text-center">
+					diplômes obtenu :
+				</h5>
+				<h5 class="col-sm-4 text-left">
+					AFPS<br>
+					(Attestation de Formation aux Premiers Secours)
+				</h5>
+			</div>
+		</section>
+		<!--	barre compétence professionnelles	-->
+		<section class="container-fluid fourth">
+			<div class="row">
+				<div class="container col-md-6 col-sm-12" id="professionalSkills">
+					<div class="row title">
+						<h3 class="col-sm-4 text-center">
+							Compétences
+						</h3>
+						<h3 class="col-sm-8">
+							Professionnelles (langage informatique)
+						</h3>
+					</div>
+					<div class="container professional">
+						<!-- --lIGNE: HTML / CSS -- -->
+						<div class="row text-center">
+							<p class="col-md-4 col-sm-12">
+								<strong>HTML / CSS</strong>
+							</p>
+							<!-- --barre de progression-- -->
+							<div class="progress col-md-8 col-sm-12">
+								<div class="progress-bar progress-bar-warning progress-bar-striped active" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width: 70%">
+									<span class="sr-only"></span>
+								</div>
+							</div>
+						</div>
+						<!-- --lIGNE: PHP / MySQL -- -->
+						<div class="row text-center">
+							<p class="col-md-4 col-sm-12">
+								<strong>PHP / MySQL</strong>
+							</p>
+							<div class="progress col-md-8 col-sm-12">
+								<div class="progress-bar progress-bar-warning progress-bar-striped active" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 75%">
+									<span class="sr-only">
+									</span>
+								</div>
+							</div>
+						</div>
+						<!-- --lIGNE: JavaScript -- -->
+						<div class="row text-center">
+							<p class="col-md-4 col-sm-12">
+								<strong>JavaScript</strong>
+							</p>
+							<div class="progress col-md-8 col-sm-12">
+								<div class="progress-bar progress-bar-warning progress-bar-striped active" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%">
+									<span class="sr-only"></span>
+								</div>
+							</div>
+						</div>
+						<!-- --lIGNE: C / C++ -- -->
+						<div class="row text-center">
+							<p class="col-md-4 col-sm-12">
+								<strong>C / C++</strong>
+							</p>
+							<div class="progress col-md-8 col-sm-12">
+								<div class="progress-bar progress-bar-warning progress-bar-striped active" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" style="width: 50%">
+									<span class="sr-only"></span>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="container col-md-6 col-sm-12" id="personalSkills">
+					<div class="row title">
+						<h3 class="col-sm-4 text-center">
+							Compétences
+						</h3>
+						<h3 class="col-sm-8">
+							Personnelles
+						</h3>
+					</div>
+					<div class="container personal">
+						<!-- --lIGNE: Créativité -- -->
+						<div class="row text-center">
+							<p class="col-md-4 col-sm-12">
+								<strong>Créativité</strong>
+							</p>
+							<!-- --barre de progression-- -->
+							<div class="progress col-md-8 col-sm-12">
+								<div class="progress-bar progress-bar-success progress-bar-striped active" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 80%">
+									<span class="sr-only">
+									</span>
+								</div>
+							</div>
+						</div>
+						<!-- --lIGNE: Adaptation -- -->
+						<div class="row text-center">
+							<p class="col-md-4 col-sm-12">
+								<strong>Adaptation</strong>
+							</p>
+							<div class="progress col-md-8 col-sm-12">
+								<div class="progress-bar progress-bar-success progress-bar-striped active" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" style="width: 90%">
+									<span class="sr-only">
+									</span>
+								</div>
+							</div>
+						</div>
+						<!-- --lIGNE: Sérieux -- -->
+						<div class="row text-center">
+							<p class="col-md-4 col-sm-12">
+								<strong>Sérieux</strong>
+							</p>
+							<div class="progress col-md-8 col-sm-12">
+								<div class="progress-bar progress-bar-success progress-bar-striped active" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" style="width: 90%">
+									<span class="sr-only">
+
+									</span>
+								</div>
+							</div>
+						</div>
+						<!-- --lIGNE: Pédagogie -- -->
+						<div class="row text-center">
+							<p class="col-md-4 col-sm-12">
+								<strong>Pédagogie</strong>
+							</p>
+
+							<div class="progress col-md-8 col-sm-12">
+								<div class="progress-bar progress-bar-success progress-bar-striped active" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100" style="width: 95%">
+									<span class="sr-only"></span>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!--	Centres d'intérêt	-->
+		<section class="container-fluid fifth" id="Activities">
+			<div class="row">
+				<h2 class="col-sm-12 text-center title">
+					Centres d'intérêt
+				</h2>
+			</div>
+			<div class="row text-center">
+				<div class="col-lg-3 col-md-0 col-sm-0"></div>
+				<div class="col-lg-3 col-md-6 col-sm-12 m-3 bg-secondary sport">
+					<div class="row m-3">
+						<h4 class="col-sm-12 text-center">
+							<strong>Sports</strong>
+						</h4>
+					</div>
+					<div class="row imgActivities">
+						<img class="col-sm-4 text-center" src="images/football.jpg" alt="Football">
+						<img class="col-sm-4 text-center" src="images/rugby.jpg" alt="Football">
+						<img class="col-sm-4 text-center" src="images/Poker.jpg" alt="Football">
+					</div>
+					<div class="row">
+						<p class="col-sm-4 text-center">
+							<strong>Football</strong>
+						</p>
+						<p class="col-sm-4 text-center">
+							<strong>Rugby</strong>
+						</p>
+						<p class="col-sm-4 text-center">
+							<strong>Poker</strong>
+						</p>
+					</div>
+
+				</div>
+				<div class="col-lg-3 col-md-6 col-sm-12 m-3 bg-secondary cooking">
+					<div class="row m-3">
+						<h4 class="col-sm-12 text-center">
+							<strong>Cuisine</strong>
+						</h4>
+					</div>
+					<div class="row imgActivities">
+						<img class="col-sm-4 text-center" src="images/rose%20pomme%20de%20terre.jpeg" alt="rose">
+						<img class="col-sm-4 text-center" src="images/madeleine.jpg" alt="madeleine">
+						<img class="col-sm-4 text-center" src="images/tarte%20au%20flan.jpeg" alt="Football">
+					</div>
+					<div class="row">
+						<p class="col-sm-4 text-center">
+							<strong>Rose de pomme de terre</strong>
+						</p>
+						<p class="col-sm-4 text-center">
+							<strong>Madelaine</strong>
+						</p>
+						<p class="col-sm-4 text-center">
+							<strong>Tarte au Flan chocolat</strong>
+						</p>
+					</div>
+				</div>
+				<div class="col-lg-3 col-md-0 col-sm-0"></div>
+			</div>
+		</section>
+
+	</main>
+
+	<!--
+	*****************************
+	|			FOOTER			|
+ 	*****************************
+ -->
+	<footer class="container-fluid ">
+		<div class="row">
+			<h4 class="col-sm-12 text-center">
+				<strong>© Guillaume - Milantoni 2020</strong>
+			</h4>
+		</div>
+	</footer>
+
+	<script src="js/header.js"></script>
+
+</body></html>

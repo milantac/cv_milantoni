@@ -1,0 +1,222 @@
+/***************************************************
+ *					webCV						   *
+ *    		Crée le : 16/11/2020			       *
+ *    		Auteur    : MILANTONI - Guillaume	   *
+ ***************************************************/
+
+/* -- -- -- STYLES GENERAUX -- -- -- */
+*{
+	font-family: "Times New Roman", Times, serif;
+    padding: 0px;
+    margin: 0px;
+}
+body{
+	width: 95%;
+	margin: auto;
+    background: #ededed;
+}
+main.container-fluid{
+	padding: 0 0;
+}
+section{
+	margin: 25px;
+}
+h2,h3{
+	padding-top: 1%;
+	padding-bottom: 1%;
+}
+/* -- -- -- BORDURE GENERAL -- -- -- */
+header, footer, .first, .photo img, header .row, .second, .expRow, .third, .fourth, #professionalSkills, #personalSkills, .fifth{
+	border: 3px solid #fff;
+	box-shadow: 0 0 2px deeppink,
+				0 0 5px rgba(0, 0, 0, 1),
+				inset 0 0 5px rgba(0, 0, 0, 1);
+	border-radius: 10px;
+}
+/*__________________________*
+ |			HEADER			|
+ *__________________________*/
+header{
+	margin: 1em auto;
+	height: 20vh;
+/*-- pour pas que ca dépasse du header -- */
+	overflow: hidden;
+	position: relative;	
+	display: grid;
+	grid-template-rows: 1fr;
+	grid-template-columns: repeat(2,50%);
+}
+
+/* -- -- -- PARTIE HEADER -- -- -- */
+header h1{
+	margin:auto;
+	color: white;
+}
+nav{
+	margin: auto;
+}
+header a{
+	color: white;
+	margin: 1vh;
+}
+
+/* -- MATRIX ANIMATION -- */
+header canvas {
+	display: block;
+	position: absolute;
+}
+#rowMatrix { 
+  grid-column: 1/3;
+  grid-row: 1/2 ;
+}
+#flexMatix{
+	display: flex;
+	position: absolute;
+}
+
+/*_________________________________________________*
+ |						main					   |
+ *_________________________________________________*/
+
+/*-- -- --SECTIONS FIRST (Information) -- -- --*/
+/*-- -- PHOTO -- --*/
+#photo img{
+    width: 200px;
+    height: 200px;
+	border: 3px solid #fff;
+	box-shadow: 0 0 2px deeppink,
+				0 0 5px rgba(0, 0, 0, 1),
+				inset 0 0 5px rgba(0, 0, 0, 1);
+	border-radius: 50%;
+    margin-top: -100px;/*-130px pour la monter*/
+}
+/*-- -- PRESENTATION -- --*/
+.presentation{
+	padding-left: 100px;
+}
+/*-- -- CONTACT -- --*/
+.contact{
+	border-left: gray 2px solid;
+}
+#logoGit, #logoFb, #logoIn{
+	font-size: 4em;
+	margin: auto;
+	text-align: center;
+}
+#logoGit{
+	color:black;
+}
+#logoFb,
+#logoIn{
+	color:blue;
+}
+#logoGit:hover,
+#logoFb:hover,
+#logoIn:hover{
+	color:darkred;
+}
+
+/*- -- -- -- -- -- -- -- -- -- -- -- -- -- -*
+ *-			SECTION SECOND & THIRTH		   -*
+ *-		(Expériences Professionnelles)	   -*	
+ *-					et				 	   -*		   	
+ *-			(Formations et Diplomes)	   -*
+ *- -- -- -- -- -- -- -- -- -- -- -- -- -- -*/
+.title{/*title: white, background black */
+	background-color: black;
+	color: whitesmoke;
+	border-radius: 10px;
+}
+.logoWork{
+    width: 200px;
+	height: 200px;
+	text-align: center;
+	padding: 0;
+}
+.logoWork img{
+	width: 100px;
+	margin-top: 50px ;
+	margin-bottom: 50px;
+}
+
+#borderExp{
+	border: black 2px solid;
+	border-radius: 10px;
+}
+
+/* -- -- --	SECTIONS FOURTH (barre compétence professionnelles) -- -- -- */
+#professionalSkills, #personalSkills{
+	background-color: whitesmoke;
+}
+.professional, .personal{
+	padding-top:10px; 
+}
+.progress-bar{
+	border-radius: 10px;
+}
+.progress-bar-warning {
+    background-color: #f0ad4e;
+}
+.progress-bar-success {
+    background-color: #5cb85c;
+}
+
+/* -- animation de la barre de progression -- */
+/*ASTUCE TROUVER SUR BOOTSTRAP*/
+.progress.active .progress-bar, .progress-bar.active {
+	animation: progress-bar-stripes 2s linear infinite;
+}
+@keyframes progress-bar-stripes{
+	0% {
+    background-position: 40px 0;
+	}
+	100% {
+    background-position: 0 0;
+	}
+}
+/*-- barre grise professionnelles et  personnelles --*/
+.progress{
+	background: linear-gradient(to right, transparent 50%, grey 50%);
+	border-radius: 10px;
+}
+/* -- -- passage avec la souris -- -- */
+/* -- on change le background -- */
+#professionalSkills:hover, #personalSkills:hover{
+	background-color: #c5d0fd;
+}
+
+/* -- -- -- SECTIONS FIFTH (Centres d'intérêt) -- -- -- */
+.fifth{
+	color: white;
+}
+#bordInteret{
+	border: black 2px solid;
+	border-radius: 10px;
+}
+.sport, .cooking, .java{
+	border: black 2px solid;
+	border-radius: 50px;
+}
+.fifth .imgActivities img{
+	width: 150px;
+	height: 150px;
+    border-radius: 50%;
+    box-shadow: 0px 0px 15px #555;
+	padding-right:0;
+	padding-left:0;
+}
+
+/*_________________________________________________*
+ |					  footer					   |
+ *_________________________________________________*/
+
+footer{
+	margin: auto;
+	height: 8vh;
+	background-color: black;
+	padding: 2vh
+}
+footer h4{
+	margin:auto;
+	color: white;
+}
